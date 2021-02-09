@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registre page</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-3 col-sm-6">
+                <h1 class="text-primary text-center my-5">Créer votre compte</h1>
+                <form  onsubmit="inscription(event)">
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom :</label>
+                        <input id="nom" type="text" placeholder="Saisissez votre nom ici" class="form-control">
+                        <div id="nom-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="prenom" class="form-label">Prénom :</label>
+                        <input id="prenom" type="text" placeholder="Saisissez votre prénom ici" class="form-control">
+                        <div id="prenom-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">E-mail :</label>
+                        <input id="mail" type="email"  placeholder="Saisissez votre adresse e-mail ici" class="form-control">
+                        <div id="mail-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mdp" class="form-label">Mot de passe :</label>
+                        <input id="mdp" type="password" placeholder="Saisissez votre mot de passe ici" class="form-control">
+                        <div id="mdp-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="conf" class="form-label">Confirmation mot de passe :</label>
+                        <input id="conf" type="password" placeholder="Saisissez votre mot de passe ici" class="form-control">
+                        <div id="conf-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <input type="submit" value="S'inscrire" class="btn btn-success"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/Register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
