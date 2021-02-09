@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-3 col-sm-6">
+                <h1 class="text-primary text-center my-5">Page d'authentification</h1>
+                <form  onclick="login(event)">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail : </label>
+                        <input id="email" type="email" placeholder="Saisissez votre adresse e-mail ici"
+                            class="form-control">
+                        <div id="email-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe :</label>
+                        <input id="password" type="password" placeholder="Saisissez votre mot de passe ici"
+                            class="form-control">
+                        <div id="password-error" class="invalid-feedback d-block"></div>
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <input type="submit" value="Connexion" class="btn btn-success"/>
+                    </div>
+                    <div class="mb-3 d-grid gap-2">
+                        <a href="Register.html" class="btn btn-link">S'inscrire</a>
+                    </div>
+                </form>                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/Login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

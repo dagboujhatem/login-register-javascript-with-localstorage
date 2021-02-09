@@ -104,7 +104,7 @@ function inscription(event) {
     };
 
     // Récupération des anciens utilisateurs (s'il existe) ou bien tableau vide
-    var users = JSON.parse(localStorage.getItem('user')) || [];
+    var users = JSON.parse(localStorage.getItem('users')) || [];
 
     // Ajouter user to users
     users.push(user);
